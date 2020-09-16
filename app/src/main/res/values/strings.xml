@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Movie News</string>
+
+    <string-array name="spinner_items">
+        <item>Search Movie</item>
+        <item>Search Actor</item>
+
+    </string-array>
+
+</resources>

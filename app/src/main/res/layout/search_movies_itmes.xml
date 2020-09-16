@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="4dp"
+    android:background="@null"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null">
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_margin="7dp"
+            app:cardCornerRadius="13dp"
+            android:layout_width="170dp"
+            android:layout_height="250dp"
+            android:elevation="10dp"
+            android:background="@null"
+            >
+
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:id="@+id/iv_srch_mov_poster"
+
+                android:layout_margin="-3dp"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <View
+
+            android:id="@+id/rv_mov_shadow"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="11dp"
+            android:layout_width="0.4dp"
+            android:layout_height="245dp"
+            android:background="@drawable/tool_bar_shadow"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@null"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_srch_mov_title"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/crete_round"
+                android:textColor="@android:color/white"
+                android:text="Tom Cruise"
+                android:textSize="20sp"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="12dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_srch_mov_date"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arimo"
+                android:textColor="@android:color/white"
+                android:text="April 6, 1960"
+                android:textSize="9sp"
+
+                android:layout_marginLeft="12dp" />
+
+            <TextView
+                android:id="@+id/tv_srch_mov_about"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/crete_round"
+                android:textColor="@color/colorGray"
+                android:text="Loner Mark Lewis works at a film studio during the day and, at night, takes racy photographs of women. Also he's making a documentary on fear, which involves recording the reactions of victims as he murders them.…"
+                android:textSize="8sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_srch_mov_adult"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/crete_round"
+              android:textColor="@android:color/white"
+                android:text=" Adult "
+                android:textSize="13sp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="12dp"
+                />
+            <TextView
+                android:id="@+id/tv_srch_mov_rate"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+           android:fontFamily="@android:string/copy"
+                android:gravity="center"
+                android:drawablePadding="-121dp"
+                android:drawableLeft="@drawable/ic_star_black_24dp"
+                android:textColor="@android:color/white"
+                android:text=""
+
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_srch_mov_votes"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arimo"
+                android:textColor="@color/colorGray"
+                android:text="1062 Votes"
+                android:textSize="7sp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="15dp" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

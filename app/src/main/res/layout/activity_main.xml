@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@color/colorDarkBack"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+android:id="@+id/frag_container"
+   >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+
+
+
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_marginTop="53dp"
+            android:layout_marginLeft="28dp"
+            android:layout_width="200dp"
+            android:layout_height="64dp"
+            android:text="Search"
+            android:textColor="@android:color/white"
+            android:textSize="52sp"
+            />
+
+        <EditText
+
+
+            android:id="@+id/search_et"
+            android:layout_marginLeft="18dp"
+            android:layout_width="313dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/tv_search"
+            android:hint="Movies, Actors, Directors..."
+            android:textColorHint="@color/colorGray"
+            android:textColor="@color/colorGray"
+           android:fontFamily="sans-serif-light"
+            android:textSize="23sp"
+            />
+        <Button
+           android:id="@+id/but_search"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginLeft="332dp"
+            android:layout_marginTop="-57dp"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+
+            android:drawableBottom="@drawable/ic_search_black_24dp"
+            android:paddingBottom="7dp"/>
+
+        <View
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="21dp"
+            android:id="@+id/search_shadow"
+            android:layout_width="357dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/search_et"
+            android:background="@drawable/tool_bar_shadow"
+            />
+
+
+
+<LinearLayout
+    android:id="@+id/firs_heder"
+    android:orientation="horizontal"
+android:layout_marginTop="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:layout_below="@+id/search_shadow"
+    >
+
+
+<TextView
+    android:layout_width="80dp"
+    android:layout_height="30dp"
+    android:text="Persons"
+    android:textColor="@android:color/white"
+    android:textSize="22sp"
+    android:layout_marginLeft="31dp"
+    />
+
+<TextView
+    android:id="@+id/tv_seeall_actors"
+    android:layout_marginLeft="212dp"
+    android:layout_width="60dp"
+    android:layout_height="22dp"
+    android:text="SEE ALL"
+    android:textColor="@color/colorGray"
+    android:textSize="13sp"
+    />
+
+
+</LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_actors"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            android:layout_below="@+id/firs_heder"
+            android:paddingBottom="2dp"
+            android:background="@null"
+            />
+
+        <View
+
+            android:id="@+id/rv_mov_shadow"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="21dp"
+            android:layout_width="357dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/rv_actors"
+            android:background="@drawable/tool_bar_shadow"
+            />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/second_heder"
+            android:orientation="horizontal"
+android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/rv_mov_shadow"
+            >
+
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="Movies"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:layout_marginLeft="31dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_seeall_movies"
+                android:layout_marginLeft="212dp"
+                android:layout_width="60dp"
+                android:layout_height="22dp"
+                android:text="SEE ALL"
+                android:textColor="@color/colorGray"
+                android:textSize="13sp"
+                />
+
+
+        </LinearLayout>
+
+ <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_movies"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/second_heder"
+            android:background="@null"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shadow_down"
+            android:alpha="1"
+            android:layout_marginTop="-355dp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

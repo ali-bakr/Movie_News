@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorDarkBack">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:orientation="vertical">
+
+                <com.flaviofaria.kenburnsview.KenBurnsView
+                    android:id="@+id/iv_mov_p_poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:scaleType="centerCrop"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="-370dp"
+                    android:alpha="0.52"
+                    android:layout_height="320dp"
+                    android:background="@color/colorDarkBack"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="-150dp"
+                    android:alpha="1"
+                    android:layout_height="150dp"
+                   android:background="@drawable/shadow"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="-100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="22dp"
+                        android:paddingTop="15dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_mov_p_name"
+                            android:paddingTop="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="tom at the farm"
+                            android:textColor="@android:color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tv_mov_p_year"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="63dp"
+                            android:layout_height="20dp"
+                            android:text="(2013)"
+                            android:textColor="@android:color/white"
+                            android:textSize="10.5sp"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="20dp">
+
+               <TextView
+                   android:id="@+id/tv_mov_p_mention1"
+
+                            android:layout_width="65dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/back_bordes"
+                            android:text="comedy"
+                            android:textSize="10sp"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:paddingTop="2dp"
+                            android:textAlignment="center"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tv_mov_p_mention2"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="65dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/back_bordes"
+                            android:text="comedy"
+                            android:textSize="10sp"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:paddingTop="2dp"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_mov_p_mention3"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="65dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/back_bordes"
+                            android:text="comedy"
+                            android:textSize="10sp"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:paddingTop="2dp"
+                            android:textAlignment="center"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        android:paddingTop="7dp"
+        android:paddingLeft="13dp">
+
+        <ImageView
+            android:layout_marginLeft="34dp"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:background="@drawable/ic_timer_black_24dp"
+            />
+
+        <ImageView
+            android:layout_marginLeft="114dp"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:background="@drawable/ic_star_black_24dp"
+            />
+
+        <ImageView
+            android:layout_marginLeft="111dp"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:background="@drawable/ic_language_black_24dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/tv_mov_p_duration"
+            android:layout_marginLeft="32dp"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="1h 45m"
+            android:fontFamily="sans-serif-light"
+
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_mov_p_rate"
+            android:layout_marginLeft="82dp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="66.0%"
+            android:fontFamily="sans-serif-light"
+
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_mov_p_language"
+            android:layout_marginLeft="76dp"
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="english"
+           android:fontFamily="sans-serif-light"
+
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+            <View
+                android:layout_marginTop="-12.6dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="@drawable/tool_bar_shadow"
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:text="Overview : "
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                />
+            <TextView
+                android:id="@+id/tv_mov_p_overview"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:layout_marginLeft="16dp"
+                />
+
+
+            <View
+                android:layout_marginTop="9dp"
+                android:layout_width="190dp"
+                android:layout_gravity="center"
+                android:layout_height="1.6dp"
+                android:background="@drawable/tool_bar_shadow"
+                />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:text="Official site : "
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                />
+            <TextView
+                android:id="@+id/tv_mov_p_oficialSit"
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:text="https://www.klsfjnf.com"
+                android:layout_marginTop="-31dp"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:layout_marginLeft="126dp"
+                android:gravity="center"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="Budget : "
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                />
+            <TextView
+                android:id="@+id/tv_mov_p_budget"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:text="$34,340,534,5"
+                android:layout_marginTop="-30dp"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:layout_marginLeft="86dp"
+                android:gravity="center"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="Revence : "
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                />
+            <TextView
+                android:id="@+id/tv_mov_p_revence"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:text="$34,340,534,5"
+                android:layout_marginTop="-30dp"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:layout_marginLeft="96dp"
+                android:gravity="center"
+                />
+
+
+            <View
+                android:layout_marginTop="9dp"
+                android:layout_width="190dp"
+                android:layout_gravity="center"
+                android:layout_height="1.6dp"
+                android:background="@drawable/tool_bar_shadow"
+                />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Actors : "
+                android:layout_marginTop="12dp"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:layout_marginLeft="16dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:paddingBottom="7dp"
+                android:background="@null"
+                />
+
+
+
+            <View
+                android:layout_marginTop="9dp"
+                android:layout_width="190dp"
+                android:layout_gravity="center"
+                android:layout_height="1.6dp"
+                android:background="@drawable/tool_bar_shadow"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Movie Crewe : "
+                android:layout_marginTop="12dp"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:layout_marginLeft="16dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:paddingBottom="7dp"
+                android:background="@null"
+                />
+
+
+
+            <View
+                android:layout_marginTop="9dp"
+                android:layout_width="190dp"
+                android:layout_gravity="center"
+                android:layout_height="1.6dp"
+                android:background="@drawable/tool_bar_shadow"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:text="Video - Trailers : "
+                android:layout_marginTop="12dp"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:layout_marginLeft="16dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingBottom="7dp"
+                android:background="@null"
+                />
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">@android:color/darker_gray</color>
+    <color name="colorMostarda">#0277BD</color>
+    <color name="colorMostarda2">#36AA3A</color>
+    <color name="colorMostarda3">#006064</color>
+    <color name="colorMostarda4">#B71C1C</color>
+    <color name="colorMostarda5">#060611</color>
+    <color name="colorMostarda6">#F57C00</color>
+    <color name="colorMostarda7">#CE131212</color>>
+    <color name="colorDarkBack">#010204</color>
+    <color name="colorDarkBackt">#1E1E22</color>
+    <color name="colorGray">@android:color/darker_gray</color>
+</resources>
